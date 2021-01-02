@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#back{
+    width: 100%;
+    min-height: 85vh;
+    /* background-color: red; */
+    display: flex;
+}
+
+
+#left{
+    width: 10%;
+    height: 85vh;
+    padding: 20px;
+    /* background-color: yellow; */
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#left i{
+    font-size: 15px;
+    align-self: center;
+
+} 
+#left #links{
+    height: 150px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#left #links a{
+    font-size: 12px;
+    text-decoration: none;
+
+}
+
+#center{
+    width: 40%;
+    min-height: 85vh;
+    /* background-color: pink; */
+    background-color: rgb(247, 247, 247);
+}
+
+#center #content h1{
+    font-weight: 600;
+    line-height: 45px;
+}
+
+#content{
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+
+
+#center #content p{
+    font-weight: 500;
+    width: 50%;
+    font-size: 10px;
+    line-height: 15px;
+    margin: 15px 0;
+}
+
+#center #animate{
+    display: inline-block;
+}
+
+#center #animate h5{
+    font-size: 12px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    /* background-color: red; */
+    /* transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s; */
+}
+
+#center #animate #anim{
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.2s;
+    
+} 
+
+#center #animate:hover #anim{
+    width: 100%;
+    cursor: pointer;
+}
+
+
+#right{
+    width: 50%;
+    min-height: 85vh;
+    background-image: url(https://images.unsplash.com/photo-1535525153412-5a42439a210d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
+}
+
+#btm{
+    position: relative;
+    width: 100%;
+    min-height: 15vh;
+    /* background-color: rgb(238, 227, 229); */
+    display: flex;
+    justify-content: flex-end;
+}
+
+   
+#btmlft {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    min-height: inherit;
+    width: 70%;
+    height: inherit;
+    display: flex;
+     
+}
+
+#btmlft #picone{
+    background-image: url(https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-size: 100%;
+    background-position: center;
+}
+
+#btmlft #pictwo{
+    position: relative;
+    background-image: url(https://images.unsplash.com/flagged/photo-1561440064-26f554ab03a5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80);
+    background-size: 100%;
+    background-position: center;
+    border-top-right-radius: 5px;
+}
+
+#btmlft #pictwo i{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+#btmlft #text{
+    padding: 15px;
+    padding-left: 25px;
+    background-color: #fff;
+    
+}
+#btmlft p{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+    width: 210px;
+    margin: 10px 0;
+}
+
+#view{
+    display: flex;
+    align-items: center;
+}
+#btmlft #view{
+    font-weight: 500;
+    font-size: 10px;
+  
+}
+
+#btmlft #view i{
+    margin-left: 10px;
+}
+
+#btmlft .one{
+    width: calc(100% / 3);
+    height: inherit;
+    /* background-color:  rgb(134, 191, 201); */
+   
+}
+
+#btmrt{
+    width: 30%;
+    height: inherit;
+    padding: 50px;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    opacity: .7;
+    
+}
+
+
+
+#btmrt #prg{
+    width:150px;
+    height: 2px;
+    background-color: rgb(184, 181, 181);
+    margin: 0 10px;
+    outline: none;
+}
+
+#btmrt #prg #prgrs{
+    width:50px;
+    height: 2px;
+    background-color:black;
+    outline: none;
+    margin-left: 100px;
+}
+
+#sidenav{
+    position: absolute; 
+    bottom: 0;
+    right: 0;
+    width: 15vh;
+    height: 80vh;
+    border-top-left-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    opacity: .7;
+    /* background-color: green;  */
+} 
+
+#sidenav #cntrnav{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+#sidenav #cntrnav i{
+    font-size: 18px;
+}
+
+#sidenav #endnav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+}
+
+#sidenav #endnav i{
+    font-size: 25px;
+    margin-bottom: 5px;
+    
+}
+
+@media(max-width:450px){
+    #left{
+        display: none;
+    }
+
+    #back{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sidenav{
+        display: none;
+    }
+
+    #center{
+        width: 100%;
+        min-height: 60vh;
+        padding: 20px;
+        text-align: center;
+        
+        
+    }
+
+    #content{
+        
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #center #content h1{
+        margin-top: 20px;
+    }
+
+    #center #content p{
+        margin: 30px 0;
+        /* width: 50%; */
+        /* display: inline-block; */
+    }
+
+
+    #right{
+        width: 100%;
+        background-position: center;
+        
+        
+    }
+
+    #btm{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #btmrt{
+        /* display: none; */
+        /* padding-left: 0px; */
+        
+        
+    }
+
+
+
+    #btmlft{
+        width: inherit;
+        position: static;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #btmlft #text{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #btmlft #picone{
+        width: 100%;
+        height: 130px;
+    }
+
+    #btmlft #pictwo{
+        width: 100%;
+        height: 130px;
+    }
+
+    #btmlft .one{
+        width: 100%;
+    }
+}
